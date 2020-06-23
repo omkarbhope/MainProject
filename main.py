@@ -77,6 +77,8 @@ def get_data():
         blue = int(request.form["blue"])
         pigment = int(request.form["pigment"])
 
+        if red == -1 and blue == -1 and green == -1:
+            pass
         if red and blue and green:
             _red = red
             _blue = blue
