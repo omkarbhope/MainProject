@@ -16,8 +16,7 @@
 
 <body>
     <div class="ar-window">
-        <video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay></video>
-        <canvas id="overlay"></canvas>
+        <img id="bg" width=1200px height=900px src="{{ url_for('video_feed') }}">
     </div>
     <div class="App">
         <a href="triallist.html">
@@ -83,13 +82,12 @@
             <img class="dot3" src="images/dot.png">
             <h1 class="othershades">Other Shades</h1>
             <button class="color1" id="color1"></button>
-            <button class="color2" onClick="updateColor('90001F')"></button>
-            <button class="color3" onClick="updateColor('DB0734')"></button>
-            <button class="color4" onClick="updateColor('a30e2d')"></button>
-            <button class="color5" onClick="updateColor('721629')"></button>
-            <button class="color6" onClick="updateColor('6d0505')"></button>
-            <button class="color7" onClick="updateColor('41000e')"></button>
-            <button class="color8" onClick="updateColor('721629')"></button>
+            <button class="color2" onClick="updateColor(144,0,31)"></button>
+            <button class="color3" onClick="updateColor(219,7,52)"></button>
+            <button class="color4" onClick="updateColor(163,14,45)"></button>
+            <button class="color5" onClick="updateColor(114,22,41)"></button>
+            <button class="color6" onClick="updateColor(109,5,5)"></button>
+            <button class="color7" onClick="updateColor(65,0,14)"></button>
             <div class="product medium-4 columns" dat-image="images/pac1.jpg" data-name="PAC Smudge Me Not Lipstick"
                 data-price="450" data-id="0">
                 <img class="lips1" src="images/pac1.jpg" alt="" />
@@ -162,18 +160,26 @@
 
 <script>
     var ctx
-    let inputSize = 608
-    let scoreThreshold = 0.9;
-    let forwardTimes = []
-    let withLandmarks = false;
+   
     let fillColor = "630015";
     let fillPigmenation = '99';
-    const TINY_FACE_DETECTOR = 'tiny_face_detector'
 
 
-    function updateColor(colorHex){
-        $('#color1').attr('value', colorHex);
-        fillColor = colorHex;
+    function updateColor(red,green,blue){
+        console.log('called');
+      var data = new FormData();
+      data.append('red',red);
+      data.append('green',green);
+      data.append('blue',blue);
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("POST", "{{ url_for('get_data') }}", true);
+      xhttp.send(data);
     }
 
     function updatePigmentation(){
@@ -205,105 +211,7 @@
         console.log('pigmentation:',fillPigmenation);
     }
 
-    function getCurrentFaceDetectionNet() {
-        return faceapi.nets.tinyFaceDetector
-    }
-
-    function isFaceDetectionModelLoaded() {
-        return !!getCurrentFaceDetectionNet().params
-    }
-
-    async function onPlay() {
-
-        if (!isFaceDetectionModelLoaded()) {
-            await getCurrentFaceDetectionNet().load('/models')
-        }
-        const videoEl = $('#inputVideo').get(0)
-        if (videoEl.paused || videoEl.ended || !isFaceDetectionModelLoaded())
-            return setTimeout(() => onPlay(), 50)
-
-        const options = new faceapi.TinyFaceDetectorOptions({ inputSize, scoreThreshold })
-
-        var result = await faceapi.detectSingleFace(videoEl, options).withFaceLandmarks()
-
-        if (result) {
-            const canvas = $('#overlay').get(0)
-            const dims = faceapi.matchDimensions(canvas, videoEl, true)
-            var resizedResult = faceapi.resizeResults(result, dims)
-
-            if (withLandmarks) {
-                faceapi.draw.drawFaceLandmarks(canvas, resizedResult)
-            }
-
-            var coordinates = resizedResult["landmarks"].getMouth()
-
-            ctx = canvas.getContext("2d")
-
-            ctx.fillStyle = '#'+fillColor+fillPigmenation;
-
-            console.log('fillStyle', ctx.fillStyle);
-
-            //upper lip 
-            ctx.beginPath()
-            ctx.moveTo(coordinates[0].x, coordinates[0].y)
-            for (i = 1; i < 6; i++) {
-                var xc = (coordinates[i].x + coordinates[i + 1].x) / 2
-                var yc = (coordinates[i].y + coordinates[i + 1].y) / 2
-                ctx.quadraticCurveTo(coordinates[i].x, coordinates[i].y, xc, yc)
-            }
-
-            ctx.lineTo(coordinates[15].x, coordinates[15].y);
-            for (i = 15; i >= 13; i--) {
-                var xc = (coordinates[i].x + coordinates[i - 1].x) / 2
-                var yc = (coordinates[i].y + coordinates[i - 1].y) / 2
-                ctx.quadraticCurveTo(coordinates[i].x, coordinates[i].y, xc, yc)
-            }
-            ctx.closePath();
-            ctx.fill();
-
-            // lower lip
-            ctx.beginPath()
-            ctx.moveTo(coordinates[6].x, coordinates[6].y)
-            for (i = 6; i < 12; i++) {
-                var xc = (coordinates[i].x + coordinates[i + 1].x) / 2
-                var yc = (coordinates[i].y + coordinates[i + 1].y) / 2
-                ctx.quadraticCurveTo(coordinates[i].x, coordinates[i].y, xc, yc)
-            }
-
-            for (i = 19; i >= 17; i--) {
-                var xc = (coordinates[i].x + coordinates[i - 1].x) / 2
-                var yc = (coordinates[i].y + coordinates[i - 1].y) / 2
-                ctx.quadraticCurveTo(coordinates[i].x, coordinates[i].y, xc, yc)
-            }
-            ctx.closePath();
-            ctx.fill();
-        }
-        setTimeout(() => onPlay());
-    }
-
-    async function run() {
-        // load face detection and face landmark models
-        await faceapi.loadFaceLandmarkModel('/models')
-
-
-        // try to access users webcam and stream the images
-        // to the video element
-        var vid_constraints = {
-            mandatory: {
-                minHeight: 1920,
-                minWidth: 1080
-            }
-        }
-        var constraints = { audio: false, video: vid_constraints };
-        const stream = await navigator.mediaDevices.getUserMedia({ video: {} })
-        const videoEl = $('#inputVideo').get(0)
-        videoEl.srcObject = stream
-    }
-
-    $(document).ready(function () {
-        run()
-    })
-
+   
 </script>
 
 </html>

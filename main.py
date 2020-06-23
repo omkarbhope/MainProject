@@ -76,7 +76,7 @@ def get_data():
         _red = red
         _blue = blue
         _green = green
-        return redirect(url_for('index'))
+        return render_template(url_for('tryout'))
 
 
 def gen(camera):
