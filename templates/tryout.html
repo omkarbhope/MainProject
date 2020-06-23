@@ -165,6 +165,7 @@
       data.append('red',red);
       data.append('green',green);
       data.append('blue',blue);
+
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -178,31 +179,21 @@
 
     function updatePigmentation(){
 
-        console.log('range value', $('#myRange').val() );
-        let rangeVal = Math.ceil($('#myRange').val() / 5) * 5;          
-        switch(rangeVal){
-            case 10: fillPigmenation = '1a'; break;
-            case 15: fillPigmenation = '26'; break;
-            case 20: fillPigmenation = '33'; break;
-            case 25: fillPigmenation = '40'; break;
-            case 30: fillPigmenation = '4d'; break;
-            case 35: fillPigmenation = '59'; break;
-            case 40: fillPigmenation = '66'; break;
-            case 45: fillPigmenation = '73'; break;
-            case 50: fillPigmenation = '80'; break;
-            case 55: fillPigmenation = '8c'; break;
-            case 60: fillPigmenation = '99'; break;
-            case 65: fillPigmenation = 'a6'; break;
-            case 70: fillPigmenation = 'b3'; break;
-            case 75: fillPigmenation = 'bf'; break;
-            case 80: fillPigmenation = 'cc'; break;
-            case 85: fillPigmenation = 'd9'; break;
-            case 90: fillPigmenation = 'e6'; break;
-            case 95: fillPigmenation = 'f2'; break;
-            case 100: fillPigmenation = 'ff'; break;
-            default:fillPigmenation = '99'; break;
+      var pigment = parseInt($('#myRange').val())/100;
+      var data = new FormData();
+      data.append('pigment',pigment);
+      
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML =
+          this.responseText;
         }
-        console.log('pigmentation:',fillPigmenation);
+      };
+      xhttp.open("POST", "{{ url_for('get_data') }}", true);
+      xhttp.send(data);
+        
     }
 
    

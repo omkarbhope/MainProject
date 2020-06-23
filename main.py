@@ -6,6 +6,8 @@ app = Flask(__name__)
 _red = 0
 _green = 0
 _blue = 0
+_pigment = 0
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -68,20 +70,25 @@ def checkout():
 
 @app.route("/get_data", methods=["POST"])
 def get_data():
-    global _red,_green,_blue
+    global _red,_green,_blue,_pigment
     if request.method == "POST":
         red = int(request.form["red"])
         green = int(request.form["green"])
         blue = int(request.form["blue"])
-        _red = red
-        _blue = blue
-        _green = green
+        pigment = int(request.form["pigment"])
+
+        if red and blue and green:
+            _red = red
+            _blue = blue
+            _green = green
+        if pigment:
+            _pigment = pigment
         return render_template(url_for('tryout'))
 
 
 def gen(camera):
     while True:
-        frame = camera.get_frame(_red,_blue,_green)
+        frame = camera.get_frame(_red,_blue,_green,_pigment)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 

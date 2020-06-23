@@ -17,7 +17,7 @@ class VideoCamera(object):
         self.video.release()
 
     # returns camera frames along with bounding boxes and predictions
-    def get_frame(self,red,blue,green):
+    def get_frame(self,red,blue,green,pigment=0.3):
         _, fr = self.video.read()
         output = fr.copy()
         gray_fr = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
@@ -48,7 +48,7 @@ class VideoCamera(object):
         #     cv2.putText(fr, pred, (x, y), font, 1, (255, 255, 0), 2)
         #     cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
 
-        cv2.addWeighted(fr, 0.3, output, 1 - 0.3,0, output)
+        cv2.addWeighted(fr, pigment, output, 1 - 0.3,0, output)
 
         _, jpeg = cv2.imencode('.jpg', output)
         return jpeg.tobytes()
