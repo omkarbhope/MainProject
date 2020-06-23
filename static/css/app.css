@@ -1,0 +1,238 @@
+.App {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+border-radius: 8px;
+}
+
+.App-logo {
+  top: 492px;
+  left: 306px;
+  pointer-events: none;
+  height: 468px;
+  width: 468px;
+}
+
+.App-header {
+  background: #000000;
+  border-radius: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.toolbar{
+
+position: absolute;
+width: 1080px;
+height: 167px;
+background: #1C1C1E;
+}
+
+.logo{
+  position: absolute;
+width: 143px;
+height: 143px;
+left: 48px;
+top: 12px;
+}
+
+.try_out{
+position: absolute;
+width: 160px;
+height: 47px;
+left: 40px;
+top: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #F0D3D3;
+}
+
+.menu{
+position: absolute;
+width: 241px;
+height: 95px;
+left: 269px;
+top: 36px;
+
+border: 7px solid #F0D3D3;
+box-sizing: border-box;
+border-radius: 62px;
+}
+
+.products{
+position: absolute;
+width: 181px;
+height: 47px;
+left: 558px;
+top: 60px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.explore{
+   position: absolute;
+width: 149px;
+height: 47px;
+left: 835px;
+top: 60px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.desc1{
+position: absolute;
+width: 860px;
+height: 47px;
+margin-left: 108px;
+margin-top: 263px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 52px;
+/* or 130% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.desc2{
+position: absolute;
+width: 538px;
+height: 60px;
+margin-left: 108px;
+margin-top: 434px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 52px;
+/* or 130% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.search_bar{
+   position:relative;
+    padding:0;
+    margin:0;
+}
+
+.input{
+    padding-left:80px;
+    position: absolute;
+    width: 860px;
+    height: 95px;
+    left: 96px;
+    top: 542px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFFFFF;
+
+    background: #3A3A3C;
+    border-radius: 50px;
+}
+
+.icon_search{
+    position: absolute;
+    left: 128.96px;
+    right: 925.92px;
+    top: 575.96px;
+    bottom: 69.01%;
+    height: 25.12px;
+    width: 25.12px;
+}
+
+.desc3{
+    position: absolute;
+width: 860px;
+height: 47px;
+left: 108px;
+top: 733px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 52px;
+/* or 130% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.barcode_img{
+position: absolute;
+width: 888px;
+height: 549px;
+left: 96px;
+top: 828px;
+
+background: url(LinearBarcodeScan.jpg);
+border-radius: 24px;
+}
+

@@ -1,0 +1,21 @@
+{
+	"lipstick1": [
+		{
+			"id": "01",
+			"name1": "Matte Lipstick",
+			"desc1": "Matte Finish Smooth Velvet Finish 1.8 gm",
+			"price1": "₹ 450.00",
+			"cancelimg_url": "images/Path.png",
+			"img1_url": "images/pac1.jpg"
+		}
+	],
+	"lipstick2": [
+		{
+			"name2": "Soft Matte Cream Lipstick",
+			"desc2": "Matte Finish Smooth Velvet Finish 1.8 gm",
+			"price2": "₹ 635.00",
+			"cancelimg2_url": "images/Path.png",
+			"img2_url": "images/pac2.jpg"
+		}
+	]
+}

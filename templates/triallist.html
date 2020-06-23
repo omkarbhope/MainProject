@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/triallist.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+    <div class="App">
+        <div class="toolbar">
+            <a href="{{ url_for('index') }}">
+                <img src="images/logo.png" class="logo">
+            </a>
+
+            <div class="menu">
+                <h1 class="try_out">TRY-OUT</h1>
+            </div>
+
+            <a href="{{ url_for('categories') }}">
+                <h1 class="products">PRODUCTS</h1>
+            </a>
+            <h1 class="explore">EXPLORE</h1>
+        </div>
+
+        <div class="heading">Your Trial List</div>
+
+        <div class="btn1"></div>
+        <button class="button" onclick="location.href='{{ url_for('categories') }}'">SEARCH FOR MORE</button>
+
+        <a href="{{ url_for('tryout') }}">
+            <div class="btn2"></div>
+            <button type="button2" class="button2" onclick="store();">TRY NOW</button>
+        </a>
+
+        <div class="box1" id="box1"></div>
+
+        <!-- <div class="box2" id="box2"></div> -->
+
+    </div>
+
+</body>
+
+<script>
+    // document.getElementById("img1").src = localStorage.getItem("pac1_img");
+
+    //box1
+    document.getElementById("box1").innerHTML = localStorage.getItem("box1");
+    document.getElementById("name1").innerHTML = localStorage.getItem("pac1_name");
+    document.getElementById("desc1").innerHTML = localStorage.getItem("pac1_desc");
+    document.getElementById("price1").innerHTML = localStorage.getItem("pac1_price");
+    $("#cancel1btn").click(function () {
+        $("#box1").hide();
+        localStorage.removeItem('box1');
+    });
+
+    //box2
+    // document.getElementById("box2").innerHTML = localStorage.getItem("box2");
+    // document.getElementById("name2").innerHTML = localStorage.getItem("pac2_name");
+    // document.getElementById("dec2").innerHTML = localStorage.getItem("pac2_desc");
+    // document.getElementById("price2").innerHTML = localStorage.getItem("pac2_price");
+    // $("#cancel2btn").click(function () {
+    //     $("#box2").hide();
+    //     localStorage.removeItem('box2');
+    // });
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

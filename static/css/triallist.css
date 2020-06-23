@@ -1,0 +1,504 @@
+.App {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #000000;
+    border-radius: 8px;
+    }
+    
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+    
+    .App-header {
+      background: #000000;
+      border-radius: 8px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+    
+    .App-link {
+      color: #61dafb;
+    }
+    
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+  .toolbar{
+
+position: absolute;
+width: 1080px;
+height: 167px;
+background: #1C1C1E;
+}
+
+.logo{
+  position: absolute;
+width: 143px;
+height: 143px;
+left: 48px;
+top: 12px;
+}
+
+.try_out{
+position: absolute;
+width: 160px;
+height: 47px;
+left: 40px;
+top: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #F0D3D3;
+}
+
+.menu{
+position: absolute;
+width: 241px;
+height: 95px;
+left: 269px;
+top: 36px;
+
+border: 7px solid #F0D3D3;
+box-sizing: border-box;
+border-radius: 62px;
+}
+
+.products{
+position: absolute;
+width: 181px;
+height: 47px;
+left: 558px;
+top: 60px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.explore{
+   position: absolute;
+width: 149px;
+height: 47px;
+left: 835px;
+top: 60px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+    .heading{
+        position: absolute;
+        width: 353px;
+        height: 47px;
+        left: 72px;
+        top: 227px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 60px;
+        /* or 133% */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .button{
+        position: absolute;
+        width: 366px;
+        height: 52px;
+        left: 99px;
+        top: 346px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 52px;
+        background-color: #000000;
+        border-color: #000000;
+        /* identical to box height, or 130% */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        
+        color: #B87373;
+    }
+    .btn1{
+        position: absolute;
+        width: 468px;
+        height: 100px;
+        left: 48px;
+        top: 322px;
+
+        border: 7px solid #B87373;
+        box-sizing: border-box;
+        border-radius: 62px;
+    }
+    .btn2{
+        position: absolute;
+        width: 468px;
+        height: 100px;
+        left: 564px;
+        top: 322px;
+
+        background: #B87373;
+        border-radius: 62px;
+    }
+    .button2{
+        position: absolute;
+        width: 176px;
+        height: 52px;
+        left: 710px;
+        top: 346px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 52px;
+        background-color:transparent;
+        border-color: transparent;
+        /* identical to box height, or 130% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    .box1{
+        position: absolute;
+        width: 984px;
+        height: 296px;
+        left: 48px;
+        top: 470px;
+
+        background: #1C1C1E;
+        border-radius: 24px;
+    }
+    .img1{
+        position: absolute;
+        width: 248px;
+        height: 248px;
+        left: 24px;
+        top: 24px;
+        
+        background: url(45c7ca5a588bf15d31d4a358351da3e7.jpg);
+        border-radius: 24px;
+    }
+
+    .cancel1btn {
+        position: absolute;
+        left: 905px;
+        right: 6.67%;
+        top: 24px;
+        bottom: 71.41%;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%; 
+        background: black;
+    }
+
+    .cancel1{
+        position: absolute;
+        left: 10.49px;
+        right: 7.58%;
+        top: 9.10px;
+        bottom: 71.95%;
+        height: 34.74px;
+        width: 34.74px;
+       }
+
+    .name1{
+        position: absolute;
+        width: 553px;
+        height: 52px;
+        left: 310px;
+        top: 24px;
+     
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+    }
+    .desc1{
+        position: absolute;
+        width: 344px;
+        height: 121px;
+        left: 310px;
+        top: 160px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #8D8D93;
+    }
+    .star1{
+        position: absolute;
+        left: 1071px;
+        right: 8.33%;
+        top: 185px;
+        bottom: 12.5%;
+        width: 30px;
+        height: 28.5px;
+        color: #FFFFFF;
+
+        }
+    .star2{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star3{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star4{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star5{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .price1{
+        position: absolute;
+        left: 831px;
+        right: 6.94%;
+        top: 200px;
+        bottom: 61.35%;
+        width: 174px;
+        height: 42px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 42px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        color: #FFFFFF;
+
+    }
+    .box2{
+        position: absolute;
+        width: 984px;
+        height: 296px;
+        left: 48px;
+        top: 790px;
+
+        background: #1C1C1E;
+        border-radius: 24px;
+    }
+    .img2{
+        position: absolute;
+        width: 248px;
+        height: 248px;
+        left: 24px;
+        top: 14px;
+        
+        background: url(45c7ca5a588bf15d31d4a358351da3e7.jpg);
+        border-radius: 24px;
+    }
+
+    .cancel2btn{
+        position: absolute;
+        left: 905px;
+        right: 6.67%;
+        top: 24px;
+        bottom: 71.41%;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%; 
+        background: black;
+    }
+
+    .cancel2{
+        position: absolute;
+        left: 10.49px;
+        right: 7.58%;
+        top: 9.10px;
+        bottom: 71.95%;
+        height: 34.74px;
+        width: 34.74px;
+    }
+
+    .name2{
+        position: absolute;
+         width: 553px;
+        height: 52px;
+        left: 310px;
+        top: 24px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .dec2{
+        position: absolute;
+        width: 344px;
+        height: 121px;
+        left: 310px;
+        top: 170px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #8D8D93;
+    }
+    .star6{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star7{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        background: #FFFFFF;
+    }
+    .star8{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star9{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star10{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .price2{
+        position: absolute;
+        left: 831px;
+        right: 6.94%;
+        top: 220px;
+        bottom: 44.69%;
+        width: 174px;
+        height: 42px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 42px;
+        /* identical to box height, or 120% */
+        
+        display: flex;
+        align-items: center;
+        text-align: right;
+        
+        color: #FFFFFF;}

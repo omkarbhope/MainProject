@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lipstick_categories.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="toolbar">
+
+            <a href="{{ url_for('categories') }}">
+                <img src="{{url_for('static',filename='images/arrow_back_24px.png')}}" class="arrow">
+            </a>
+
+            <a href="{{ url_for('landing_page') }}">
+                <h1 class="try_out">TRY-OUT</h1>
+            </a>
+            <div class="menu">
+                <h1 class="products">PRODUCTS</h1>
+            </div>
+            <h1 class="explore">EXPLORE</h1>
+        </div>
+    </div>
+
+    <div id="search_bar">
+        <input type="text" class="input" value>
+        <img src="{{url_for('static',filename='images/search_icon.png')}}" class="icon_search">
+    </div>
+
+    <div class="togglebutton">
+        <div class="category">
+            <h1 class="category1">Category</h1>
+        </div>
+        <div class="company">Company</div>
+    </div>
+
+    <div class="primer">
+        <h1 class="category_name">PRIMER</h1>
+    </div>
+
+    <a href="{{ url_for('lip_products') }}">
+        <div class="lipstick">
+            <h1 class="category_name">LIPSTICK</h1>
+        </div>
+    </a>
+    <div class="lip_gloss">
+        <h1 class="category_name">LIP GLOSS</h1>
+    </div>
+
+    <div class="liquid_lipstick">
+        <h1 class="category_name">LIQUID LIPSTICK</h1>
+    </div>
+
+    <div class="lip_liner_pencil">
+        <h1 class="category_name">LIP LINER & PENCIL</h1>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

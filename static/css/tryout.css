@@ -1,0 +1,747 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background: #000000;
+  border-radius: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textbackground {
+  position: absolute;
+  width: 767px;
+  height: 95px;
+  left: 154px;
+  top: 872px;
+
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 62px;
+
+}
+
+.text {
+  position: absolute;
+  width: 671px;
+  height: 47px;
+  left: 80px;
+  top: 10px;
+  bottom: 1188px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 47px;
+  /* identical to box height, or 134% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+}
+
+.arrow {
+  position: absolute;
+  width: 44.67px;
+  height: 44.67px;
+  left: 59.17px;
+  top: 61.17px;
+}
+
+.btn1 {
+  position: absolute;
+  width: 280px;
+  height: 95px;
+  left: 514px;
+  top: 36px;
+
+  background: rgba(184, 115, 115, 0.6);
+  backdrop-filter: blur(35px);
+  border-radius: 62px;
+}
+
+.button {
+  position: absolute;
+  width: 184px;
+  height: 47px;
+  left: 45px;
+  top: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.addtocart {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 818px;
+  top: 36px;
+
+  background: rgba(184, 115, 115, 0.65);
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 47.5px;
+
+}
+
+.bag_img {
+  position: absolute;
+  left: 23.3%;
+  top: 23.33%;
+}
+
+.addphoto {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 937px;
+  top: 36px;
+
+  background: rgba(184, 115, 115, 0.65);
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 47.5px;
+}
+
+.images {
+  position: absolute;
+  left: 23.3%;
+  top: 20.83%;
+  width: 55px;
+  height: 55px;
+}
+
+.addproduct {
+  position: absolute;
+  width: 285px;
+  height: 47px;
+  left: 48px;
+  top: 1014px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 3px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.arrow2 {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 1030px;
+  bottom: 33.33%;
+  width: 33.5px;
+  height: 20.69px;
+
+
+}
+
+.addbutton {
+  position: absolute;
+  width: 272px;
+  height: 71px;
+  left: 761px;
+  top: 1002px;
+
+  background: rgba(184, 115, 115, 0.6);
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 47.5px;
+}
+
+.add {
+  position: absolute;
+  width: 224px;
+  height: 47px;
+  left: 24px;
+  top: 12px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 47px;
+  /* identical to box height, or 134% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+.lips {
+  position: absolute;
+  width: 77px;
+  height: 47px;
+  left: 48px;
+  top: 1089px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+.btn2 {
+  position: absolute;
+  width: 221px;
+  height: 71px;
+  left: 736px;
+  top: 101px;
+  background: rgba(184, 115, 115, 0.65);
+  backdrop-filter: blur(35px);
+  border-radius: 62px;
+
+}
+
+.btn3 {
+  position: absolute;
+  width: 221px;
+  height: 71px;
+  left: 736px;
+  top: 101px;
+  background: rgba(184, 115, 115, 0.65);
+  backdrop-filter: blur(35px);
+  border-radius: 62px;
+}
+
+.addtobag {
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+}
+
+.addtobag2 {
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.lips1 {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  left: calc(50% - 148px/2 - 394px);
+  top: 24px;
+
+  border-radius: 24px;
+}
+
+.lips2 {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  left: calc(50% - 148px/2 - 394px);
+  top: 24px;
+
+  background: url(8903380003642.png);
+  border-radius: 24px;
+
+}
+
+.name1 {
+  position: absolute;
+  width: 521px;
+  height: 47px;
+  left: 196px;
+  top: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+
+.name2 {
+  position: absolute;
+  width: 521px;
+  height: 47px;
+  left: 196px;
+  top: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+
+.price1 {
+  position: absolute;
+  width: 137px;
+  height: 47px;
+  left: 615px;
+  top: 113px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 47px;
+  /* identical to box height, or 134% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.dot1 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 25.17px;
+  bottom: 66.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.dot2 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 41.92px;
+  bottom: 41.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.dot3 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 58.67px;
+  bottom: 16.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.price2 {
+  position: absolute;
+  width: 137px;
+  height: 47px;
+  left: 615px;
+  top: 113px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 47px;
+  /* identical to box height, or 134% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.dot4 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 26.17px;
+  bottom: 66.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.dot5 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 41.92px;
+  bottom: 41.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.dot6 {
+  position: absolute;
+  left: 919.92px;
+  right: 41.67%;
+  top: 59.67px;
+  bottom: 16.67%;
+  width: 11.17px;
+  height: 11.17px;
+
+  background: #DADADA;
+}
+
+.lipsline {
+  position: absolute;
+  width: 883px;
+  height: 0px;
+  left: 149px;
+  top: 1112px;
+
+  border: 2px solid #FFFFFF;
+}
+
+.box1 {
+  position: absolute;
+  width: 984px;
+  height: 385px;
+  left: 48px;
+  top: 1160px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(35px);
+  border-radius: 36px;
+}
+
+.box2 {
+  position: absolute;
+  width: 984px;
+  height: 196px;
+  left: 48px;
+  top: 1580px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(35px);
+  border-radius: 36px;
+
+}
+
+.face {
+  position: absolute;
+  width: 89px;
+  height: 47px;
+  left: 48px;
+  top: 1612px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+.faceline {
+  position: absolute;
+  width: 871px;
+  height: 0px;
+  left: 161px;
+  top: 1634px;
+
+  border: 2px solid #FFFFFF;
+
+}
+
+.box3 {
+  position: absolute;
+  width: 984px;
+  height: 196px;
+  left: 48px;
+  top: 1683px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
+}
+
+.slidecontainer {
+  width: 288px;
+}
+
+.slider {
+  position: absolute;
+  width: 288px;
+  height: 0px;
+  left: 263px;
+  top: 136px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  -webkit-appearance: none;
+  border: 3px solid #000000;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.othershades {
+  position: absolute;
+  width: 220px;
+  height: 42px;
+  left: 36px;
+  top: 208px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.smallcolor1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 196px;
+  top: 116px;
+}
+
+.smallcolor3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 196px;
+  top: 116px;
+  border-radius: 50%;
+  background: #6D0505;
+}
+
+.color1 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 84px;
+  top: 274px;
+  border-radius: 50%;
+  background: #630015;
+}
+
+.color2 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 231px;
+  top: 274px;
+  border-radius: 50%;
+  background: #90001F;
+}
+
+.color3 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 330px;
+  top: 274px;
+  border-radius: 50%;
+  background: #DB0734;
+}
+
+.color4 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 429px;
+  top: 274px;
+  border-radius: 50%;
+  background: #A30E2D;
+}
+
+.color5 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 528px;
+  top: 274px;
+  border-radius: 50%;
+  background: #721629;
+}
+
+.color6 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 627px;
+  top: 274px;
+  border-radius: 50%;
+  background: #6D0505;
+}
+
+.color7 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 726px;
+  top: 274px;
+  border-radius: 50%;
+  background: #41000E;
+}
+
+.color8 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 825px;
+  top: 274px;
+  border-radius: 50%;
+  background: #721629;
+}
+
+.cart {
+  position: absolute;
+  width: 516px;
+  height: 516px;
+  left: calc(50% - 516px/2 + 258px);
+  top: 169px;
+
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 36px;
+
+}
+
+.cartsqaure {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 835px;
+  top: 171.3px;
+
+  background: rgba(255, 255, 255, 0.6);
+  transform: rotate(-47.22deg);
+
+}
+
+video {
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 0px;
+  padding: 0px;
+}
+
+canvas {
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.ar-window {
+  zoom:150%;
+  margin-left: -165px;
+}

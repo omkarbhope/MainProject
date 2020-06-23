@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="toolbar">
+            <a href="{{ url_for('index') }}">
+                <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+            </a>
+
+            <div class="menu">
+                <h1 class="try_out">TRY-OUT</h1>
+            </div>
+
+            <a href="{{ url_for('categories') }}">
+                <h1 class="products">PRODUCTS</h1>
+            </a>
+            <h1 class="explore">EXPLORE</h1>
+        </div>
+
+        <div class="desc1">
+            <h1>Your trial list is empty. Search or browse for your products to try them out.</h1>
+        </div>
+
+        <div class="desc2">
+            <h1>Already Know what to try?</h1>
+        </div>
+
+        <div id="search_bar">
+            <input type="text" class="input" value>
+            <img src="{{url_for('static',filename='images/search_icon.png')}}" class="icon_search">
+        </div>
+
+        <div class="desc3">
+            <h1>Or, scan the barcode of the product to try it.</h1>
+        </div>
+
+
+        <img src="{{url_for('static',filename='images/LinearBarcodeScan 1.png')}}" class="barcode_img">
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,378 @@
+.App {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #000000;
+    border-radius: 8px;
+    }
+    
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+    
+    .App-header {
+      background: #000000;
+      border-radius: 8px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+    
+    .App-link {
+      color: #61dafb;
+    }
+    
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+     .toolbar{
+    
+    position: absolute;
+    width: 1080px;
+    height: 167px;
+    
+    /* BG Grouped / Dark Base / Secondary */
+    
+    background: #1C1C1E;
+    }
+
+    .arrow{
+position: absolute;
+width: 44.67px;
+height: 44.67px;
+left: 59.17px;
+top: 61.17px;
+}
+    
+   .try_out{
+position: absolute;
+width: 160px;
+height: 47px;
+left: 317px;
+top: 60px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.menu{
+position: absolute;
+left: 510px;
+right: 27.13%;
+top: 36px;
+bottom: 93.18%;
+width: 277px;
+height: 95px;
+border: 7px solid #F0D3D3;
+box-sizing: border-box;
+border-radius: 62px;
+}
+
+.products{
+position: absolute;
+left: 40px;
+right: 32.13%;
+top: 15px;
+bottom: 94.43%;
+height: 47px;
+width: 181px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F0D3D3;
+}
+
+.explore{
+position: absolute;
+left: 835px;
+right: 9.44%;
+top: 60px;
+bottom: 94.43%;
+width: 149px;
+height: 47px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.search_bar{
+   position:relative;
+    padding:0;
+    margin:0;
+}
+
+.input{
+    padding-left:80px;
+    position: absolute;
+    width: 984px;
+    height: 95px;
+    left: 48px;
+    top: 191px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFFFFF;
+
+    background: #3A3A3C;
+    border-radius: 50px;
+}
+
+.icon_search{
+    position: absolute;
+    left: 87.96px;
+    right: 925.92px;
+    top: 225.96px;
+    bottom: 69.01%;
+    height: 25.12px;
+    width: 25.12px;
+}
+    
+    .desc1{
+        position: absolute;
+    width: 860px;
+    height: 47px;
+    margin-left: 108px;
+    margin-top: 263px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .desc2{
+    position: absolute;
+    width: 860px;
+    height: 47px;
+    margin-left: 108px;
+    margin-top: 450px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .desc3{
+        position: absolute;
+    width: 860px;
+    height: 47px;
+    left: 108px;
+    top: 733px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    .search{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 9.95%;
+        bottom: 85.1%;
+
+        background: #3A3A3C;
+        border-radius: 50px;
+    }
+   .togglebutton{
+        position: absolute;
+        left: 48px;
+        right: 4.44%;
+        top: 334px;
+        bottom: 77.66%;
+
+        width: 984px;
+        height: 95px;
+        background: #6D3434;
+        border-radius: 50px;
+    }
+    .category{
+        position: absolute;
+        left: 12px;
+        right: 51.11%;
+        top: 12px;
+        bottom: 78.28%;
+        width: 468px;
+        height: 71px;
+        background: #B87373;
+        border-radius: 50px;
+
+    }
+    .company{
+
+        position: absolute;
+        left: 653px;
+        right: 19.17%;
+        top: 24px;
+        bottom: 78.91%;
+        width: 172px;
+        height: 47px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* identical to box height, or 134% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+    .category1{
+        position: absolute;
+left: 153px;
+right: 65.28%;
+top: 10px;
+bottom: 78.91%;
+width: 162px;
+height: 47px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+    }
+
+
+    .primer{
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    top:477px;
+    left: 48px;
+    background: #1C1C1E;
+    border-radius: 24px;
+    }
+
+    .category_name{
+        position: absolute;
+width: 147px;
+height: 47px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+top:128px;
+left: 74px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #8D8D93;
+    }
+
+.lipstick{
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    top:477px;
+    left: 368px;
+    background: #1C1C1E;
+    border-radius: 24px;
+}
+
+.lip_gloss{
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    top:477px;
+    left: 688px;
+    background: #1C1C1E;
+    border-radius: 24px;
+}
+
+.liquid_lipstick{
+    position: absolute;
+width: 616px;
+height: 296px;
+top:797px;
+left:48px;
+background: #1C1C1E;
+border-radius: 24px;
+}
+
+.lip_liner_pencil{
+    position: absolute;
+width: 296px;
+height: 296px;
+top:797px;
+left:688px;
+background: #1C1C1E;
+border-radius: 24px;
+}

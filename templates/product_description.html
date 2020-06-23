@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/product_description.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="toolbar">
+
+            <a href="{{ url_for('lip_products') }}">
+                <img src="{{url_for('static',filename='images/arrow_back_24px.png')}}" class="arrow">
+            </a>
+
+            <a href="{{ url_for('landing_page') }}">
+                <h1 class="try_out">TRY-OUT</h1>
+            </a>
+            <div class="menu">
+                <h1 class="products">PRODUCTS</h1>
+            </div>
+            <h1 class="explore">EXPLORE</h1>
+        </div>
+    </div>
+
+    <img src="{{url_for('static',filename='images/pac1.jpg')}}" class="lipstick"
+            style="position: absolute; width: 283px; height: 283px;">
+
+    <h1 class="product_name">MATTE LIPSTICK</h1>
+    <h1 class="price">₹450</h1>
+    <h1 class="shades">Available in 7 shades</h1>
+
+    <a href="{{ url_for('triallist') }}">
+        <button class="add">+ ADD</button>
+    </a>
+
+    <button class="similar" onclick="location.href='{{ url_for('lip_products') }}'">VIEW SIMILAR</button>
+
+    <img src="{{url_for('static',filename='images/color1.png')}}" class="color1">
+
+        <img src="{{url_for('static',filename='images/color2.png')}}" class="color2">
+
+        <img src="{{url_for('static',filename='images/color3.png')}}" class="color3">
+
+        <img src="{{url_for('static',filename='images/color4.png')}}" class="color4">
+
+        <img src="{{url_for('static',filename='images/color5.png')}}" class="color5">
+
+        <img src="{{url_for('static',filename='images/color6.png')}}" class="color6">
+
+        <img src="{{url_for('static',filename='images/color7.png')}}" class="color7">
+
+
+    <div class="line"></div>
+    <div class="description">Product Description</div>
+    <div class="productdescription">A full-pigment lip color with a smooth, ultra-matte finish. Get beautiful, classic
+        matte lips in a flash with this highly-pigmented lipstick. Matte Lipstick provides a soft, elegant, and lasting
+        finish in enough shades to satisfy any lip aficionado.</div>
+    <div class="line1"></div>
+        <div class="Frequentlyboughttogether">Frequently bought together</div>
+        <div class="photo1">
+            <img src="{{url_for('static',filename='images/pac1.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo2">
+            <img src="{{url_for('static',filename='images/pac2.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo3">
+            <img src="{{url_for('static',filename='images/pac3.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo4">
+            <img src="{{url_for('static',filename='images/pac4.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo5">
+            <img src="{{url_for('static',filename='images/pac5.PNG')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="line2"></div>
+
+        <div class="peoplealsotried">People also tried</div>
+
+        <div class="photo6">
+            <img src="{{url_for('static',filename='images/concealer.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo7">
+            <img src="{{url_for('static',filename='images/lipliner.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo8">
+            <img src="{{url_for('static',filename='images/lipprimer.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    <!-- <div class="photo9">
+        <img src="images/face_2.png" style="position: absolute; width: 143px; height: 143px;">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="photo10">
+        <img src="images/face_3.png" style="position: absolute; width: 143px; height: 143px;">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div> -->
+    <div class="line3"></div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

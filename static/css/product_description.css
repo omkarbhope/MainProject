@@ -1,0 +1,611 @@
+.App {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #000000;
+    border-radius: 8px;
+    }
+    
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+    
+    .App-header {
+      background: #000000;
+      border-radius: 8px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+    
+    .App-link {
+      color: #61dafb;
+    }
+    
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+  .toolbar{
+    
+    position: absolute;
+    width: 1080px;
+    height: 167px;
+    
+    /* BG Grouped / Dark Base / Secondary */
+    
+    background: #1C1C1E;
+    }
+
+    .arrow{
+position: absolute;
+width: 44.67px;
+height: 44.67px;
+left: 59.17px;
+top: 61.17px;
+}
+    
+   .try_out{
+position: absolute;
+width: 160px;
+height: 47px;
+left: 317px;
+top: 60px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.menu{
+position: absolute;
+left: 510px;
+right: 27.13%;
+top: 36px;
+bottom: 93.18%;
+width: 277px;
+height: 95px;
+border: 7px solid #F0D3D3;
+box-sizing: border-box;
+border-radius: 62px;
+}
+
+.products{
+position: absolute;
+left: 40px;
+right: 32.13%;
+top: 15px;
+bottom: 94.43%;
+height: 47px;
+width: 181px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F0D3D3;
+}
+
+.explore{
+position: absolute;
+left: 835px;
+right: 9.44%;
+top: 60px;
+bottom: 94.43%;
+width: 149px;
+height: 47px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+    
+    .desc1{
+        position: absolute;
+    width: 860px;
+    height: 47px;
+    margin-left: 108px;
+    margin-top: 263px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .desc2{
+    position: absolute;
+    width: 860px;
+    height: 47px;
+    margin-left: 108px;
+    margin-top: 450px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .search_bar{
+        position: absolute;
+    width: 860px;
+    height: 95px;
+    left: 96px;
+    top: 542px;
+    
+    background: #3A3A3C;
+    border-radius: 50px;
+    }
+    
+    .desc3{
+        position: absolute;
+    width: 860px;
+    height: 47px;
+    left: 108px;
+    top: 733px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    .search{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 9.95%;
+        bottom: 85.1%;
+
+        background: #3A3A3C;
+        border-radius: 50px;
+    }
+    .togglebutton{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 17.4%;
+        bottom: 77.66%;
+
+        background: #6D3434;
+        border-radius: 50px;
+    }
+    .lipstick{
+        position: absolute;
+left: 4.44%;
+right: 69.35%;
+top: 11.2%;
+bottom: 74.06%;
+
+border-radius: 24px;
+    }
+    .product_name{
+position: absolute;
+left: 33.98%;
+right: 5%;
+top: 13.2%;
+bottom: 85.83%;
+width: 700px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 57px;
+/* identical to box height, or 127% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+    }
+    .price{
+        position: absolute;
+        left: 33.98%;
+        right: 52.78%;
+        top: 18.42%;
+        bottom: 81.61%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 57px;
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .color1{
+        position: absolute;
+        left: 4.44%;
+        right: 88.61%;
+        top: 34.64%;
+        bottom: 61.46%;
+        height: 75px;
+        width: 75px;
+    }
+    .color2{
+        position: absolute;
+        left: 14.72%;
+        right: 78.33%;
+        top: 34.64%;
+        bottom: 61.46%;
+        height: 75px;
+        width: 75px;
+    }
+    .color3{
+        position: absolute;
+        left: 25%;
+        right: 68.06%;
+        top: 34.64%;
+        bottom: 61.46%;
+         height: 75px;
+        width: 75px;
+       
+    }
+    .color4{
+        position: absolute;
+        left: 35.28%;
+        right: 57.78%;
+        top: 34.64%;
+        bottom: 61.46%;
+         height: 75px;
+        width: 75px;
+        
+    }
+    .color5{
+        position: absolute;
+        left: 45.56%;
+        right: 47.5%;
+        top: 34.64%;
+        bottom: 61.46%;
+         height: 75px;
+        width: 75px;
+        
+    }
+    .color6{
+        position: absolute;
+        left: 55.83%;
+        right: 37.22%;
+        top: 34.64%;
+        bottom: 61.46%;
+         height: 75px;
+        width: 75px;
+      
+    }
+    .color7{
+        position: absolute;
+        left: 66.11%;
+        right: 26.94%;
+        top: 34.64%;
+        bottom: 61.46%;
+         height: 75px;
+        width: 75px;
+   
+    }
+    .line{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 42.29%;
+        bottom: 57.71%;
+
+        border: 2px solid #F0D3D3;
+    }
+    .description{
+        position: absolute;
+        left: 4.44%;
+        right: 62.13%;
+        top: 44.79%;
+        bottom: 52.76%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* identical to box height, or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .productdescription{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 49.11%;
+        bottom: 43.54%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+
+        color: #FFFFFF;
+
+    }
+    .line1{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 59.96%;
+        bottom: 41.04%;
+
+        border: 2px solid #F0D3D3;
+    }
+    .Frequentlyboughttogether{
+        position: absolute;
+        left: 4.44%;
+        right: 54.44%;
+        top: 61.46%;
+        bottom: 36.09%;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* identical to box height, or 134% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        }
+        .photo1{
+            position: absolute;
+            left: 4.44%;
+            right: 81.85%;
+            top: 66.41%;
+            bottom: 25.89%;
+
+            background: url(8904245705466_1.png);
+            border-radius: 24px;
+        }
+        .photo2{
+            position: absolute;
+            left: 22.59%;
+            right: 63.7%;
+            top: 66.41%;
+            bottom: 25.89%;
+
+            background: url(8903380003642.png);
+            border-radius: 24px;
+        }
+        .photo3{
+            position: absolute;
+            left: 40.74%;
+            right: 45.56%;
+            top: 66.41%;
+            bottom: 25.89%;
+
+            background: url(product-with-swatch_3_1.png);
+            border-radius: 24px;
+        }
+        .photo4{
+            position: absolute;
+            left: 58.89%;
+            right: 27.41%;
+            top: 66.41%;
+            bottom: 25.89%;
+
+            background: url(MYN_FMMPP_1.png);
+            border-radius: 24px;
+        }
+        .photo5{
+            position: absolute;
+            left: 77.04%;
+            right: 9.26%;
+            top: 66.41%;
+            bottom: 25.89%;
+
+            background: url(light-01_1.png);
+            border-radius: 24px;
+        }
+        .line2{
+            position: absolute;
+            left: 4.44%;
+            right: 4.44%;
+            top: 76.61%;
+            bottom: 23.39%;
+
+            border: 2px solid #F0D3D3;
+        }
+        .photo6{
+            position: absolute;
+            left: 4.44%;
+            right: 81.85%;
+            top: 84.06%;
+            bottom: 8.23%;
+
+            background: url(8904245705466_1.png);
+            border-radius: 24px;
+        }
+        .photo7{
+            position: absolute;
+            left: 22.59%;
+            right: 63.7%;
+            top: 84.06%;
+            bottom: 8.23%;
+
+            background: url(8903380003642.png);
+            border-radius: 24px;
+        }
+        .photo8{
+            position: absolute;
+            left: 40.74%;
+            right: 45.56%;
+            top: 84.06%;
+            bottom: 8.23%;
+
+            background: url(product-with-swatch_3_1.png);
+            border-radius: 24px;
+        }
+        .photo9{
+            position: absolute;
+            left: 58.89%;
+            right: 27.41%;
+            top: 84.06%;
+            bottom: 8.23%;
+            
+            background: url(MYN_FMMPP_1.png);
+            border-radius: 24px;
+        }
+        .photo10{
+            position: absolute;
+            left: 77.04%;
+            right: 9.26%;
+            top: 84.06%;
+            bottom: 8.23%;
+
+            background: url(light-01_1.png);
+            border-radius: 24px;
+        }
+        .line3{
+        position: absolute;
+        left: 4.44%;
+        right: 4.44%;
+        top: 94.27%;
+        bottom: 5.73%;
+
+        border: 2px solid #F0D3D3;
+        }
+
+.shades{
+    position: absolute;
+left: 4.44%;
+right: 62.13%;
+top: 29.69%;
+bottom: 67.86%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+
+.add{
+    position: absolute;
+left: 33.98%;
+right: 48.15%;
+top: 20.99%;
+bottom: 74.06%;
+
+width: 193px;
+background: #B87373;
+border-radius: 62px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+color: #FFFFFF;
+}
+
+.similar{
+    position: absolute;
+left: 55.19%;
+right: 14.44%;
+top: 20.99%;
+bottom: 74.06%;
+width: 398px;
+opacity: 0.7;
+border: 7px solid #B87373;
+box-sizing: border-box;
+border-radius: 62px;
+background: black;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+color: #B87373;
+}
+
+.peoplealsotried{
+    position: absolute;
+left: 4.44%;
+right: 54.44%;
+top: 79.11%;
+bottom: 18.44%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}

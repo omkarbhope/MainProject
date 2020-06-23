@@ -1,0 +1,541 @@
+.App {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #000000;
+    border-radius: 8px;
+    }
+    
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+    
+    .App-header {
+      background: #000000;
+      border-radius: 8px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+    
+    .App-link {
+      color: #61dafb;
+    }
+    
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .toolbar{
+    
+    position: absolute;
+    width: 1080px;
+    height: 167px;
+    
+    /* BG Grouped / Dark Base / Secondary */
+    
+    background: #1C1C1E;
+    }
+    
+   .checkout_text{
+    position: absolute;
+    left:163px;
+    right: 26.67%;
+    top: 85px;
+    bottom: 94.27%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height, or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+.menu{
+position: absolute;
+left: 705px;
+right: 27.13%;
+top: 20.88%;
+bottom: 93.18%;
+width: 327px;
+height: 95px;
+background: #B87373;
+box-sizing: border-box;
+border-radius: 62px;
+}
+
+.end_session{
+position: absolute;
+left: 15.11%;
+right: 32.13%;
+top: 50.12%;
+bottom: 94.43%;
+
+width:231px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F0D3D3;
+}
+
+.top{
+    position: absolute;
+width: 194px;
+height: 47px;
+left: 72px;
+top: 215px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+
+color: #FFFFFF;
+}
+
+.desc{
+    position: absolute;
+width: 549px;
+height: 257px;
+left: 72px;
+top: 286px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 42px;
+/* or 140% */
+
+
+color: #FFFFFF;
+}
+
+.price{
+    position: absolute;
+width: 468px;
+height: 52px;
+left: 72px;
+top: 600px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 52px;
+/* identical to box height, or 130% */
+
+
+color: #FFFFFF;
+}
+
+.menu2{
+    position: absolute;
+left: 62.96%;
+right: 4.44%;
+top: 30.16%;
+bottom: 64.9%;
+
+width:352px;
+height:95px ;
+background: #B87373;
+border-radius: 62px;
+}
+
+.print_qrcode{
+position: absolute;
+left: 12%;
+right: 32.13%;
+top: 50.12%;
+bottom: 94.43%;
+
+width:290px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F0D3D3;
+}
+
+.qrcode{
+position: absolute;
+width: 328px;
+height: 328px;
+left: 692px;
+top: 215px;
+
+border-radius: 24px;
+}
+
+.togglebutton{
+        position: absolute;
+        left: 48px;
+        right: 4.44%;
+        top: 38.85%;
+        bottom: 77.66%;
+
+        width: 984px;
+        height: 95px;
+        background: #6D3434;
+        border-radius: 50px;
+    }
+    .category{
+        position: absolute;
+        left: 12px;
+        right: 51.11%;
+        top: 12px;
+        bottom: 78.28%;
+        width: 468px;
+        height: 71px;
+        background: #B87373;
+        border-radius: 50px;
+
+    }
+    .company{
+
+        position: absolute;
+        left: 615px;
+        right: 19.17%;
+        top: 24px;
+        bottom: 78.91%;
+        width: 247px;
+        height: 47px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* identical to box height, or 134% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+    .category1{
+position: absolute;
+left: 84px;
+right: 65.28%;
+top: 10px;
+bottom: 78.91%;
+width: 300px;
+height: 47px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 47px;
+/* identical to box height, or 134% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .box1{
+        position: absolute;
+        width: 984px;
+        height: 296px;
+        left: 48px;
+        top: 889px;
+
+        background: #1C1C1E;
+        border-radius: 24px;
+    }
+    .img1{
+        position: absolute;
+        width: 248px;
+        height: 248px;
+        left: 24px;
+        top: 24px;
+        
+        background: url(45c7ca5a588bf15d31d4a358351da3e7.jpg);
+        border-radius: 24px;
+    }
+    .cancel1{
+        position: absolute;
+        left: 91.51%;
+        right: 7.58%;
+        top: 24px;
+        bottom: 71.95%;
+        width: 34.74px;
+        height: 34.74px;
+        
+       }
+    .name1{
+        position: absolute;
+        width: 553px;
+        height: 52px;
+        left: 310px;
+        top: 24px;
+     
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+    }
+    .desc1{
+        position: absolute;
+        width: 344px;
+        height: 121px;
+        left: 310px;
+        top: 160px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #8D8D93;
+    }
+    .star1{
+        position: absolute;
+        left: 1071px;
+        right: 8.33%;
+        top: 185px;
+        bottom: 12.5%;
+        width: 30px;
+        height: 28.5px;
+        color: #FFFFFF;
+
+        }
+    .star2{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star3{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star4{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .star5{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        }
+    .price1{
+        position: absolute;
+        left: 831px;
+        right: 6.94%;
+        top: 200px;
+        bottom: 61.35%;
+        width: 174px;
+        height: 42px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 42px;
+        /* identical to box height, or 120% */
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        color: #FFFFFF;
+
+    }
+    .box2{
+        position: absolute;
+        width: 984px;
+        height: 296px;
+        left: 48px;
+        top: 1209px;
+
+        background: #1C1C1E;
+        border-radius: 24px;
+    }
+    .img2{
+        position: absolute;
+        width: 248px;
+        height: 248px;
+        left: 24px;
+        top: 14px;
+        
+        background: url(45c7ca5a588bf15d31d4a358351da3e7.jpg);
+        border-radius: 24px;
+    }
+    .cancel2{
+        position: absolute;
+        left: 91.51%;
+        right: 7.58%;
+        top: 24px;
+        bottom: 71.95%;
+        width: 34.74px;
+        height: 34.74px;
+        
+       
+    }
+    .name2{
+        position: absolute;
+         width: 553px;
+        height: 52px;
+        left: 310px;
+        top: 24px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .dec2{
+        position: absolute;
+        width: 344px;
+        height: 121px;
+        left: 310px;
+        top: 170px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 47px;
+        /* or 134% */
+
+        display: flex;
+        align-items: center;
+
+        color: #8D8D93;
+    }
+    .star6{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star7{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+
+        background: #FFFFFF;
+    }
+    .star8{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star9{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .star10{
+        position: absolute;
+        left: 8.33%;
+        right: 8.33%;
+        top: 8.34%;
+        bottom: 12.5%;
+        
+        background: #FFFFFF;}
+    .price2{
+        position: absolute;
+        left: 831px;
+        right: 6.94%;
+        top: 220px;
+        bottom: 44.69%;
+        width: 174px;
+        height: 42px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 42px;
+        /* identical to box height, or 120% */
+        
+        display: flex;
+        align-items: center;
+        text-align: right;
+        
+        color: #FFFFFF;}

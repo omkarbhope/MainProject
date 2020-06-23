@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/product_description.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="toolbar">
+
+            <a href="{{ url_for('lip_products') }}">
+                <img src="{{url_for('static',filename='images/arrow_back_24px.png')}}" class="arrow">
+            </a>
+
+            <a href="{{ url_for('landing_page') }}">
+                <h1 class="try_out">TRY-OUT</h1>
+            </a>
+            <div class="menu">
+                <h1 class="products">PRODUCTS</h1>
+            </div>
+            <h1 class="explore">EXPLORE</h1>
+        </div>
+    </div>
+
+    <form action="{{ url_for('triallist') }}">
+        <img src="{{url_for('static',filename='images/pac2.jpg')}}" class="lipstick" id="lipstick"
+            style="position: absolute; width: 283px; height: 283px;">
+
+        <h1 class="product_name">SOFT MATTE CREAM LIPSTICK</h1>
+        <h1 class="price">₹635</h1>
+        <h1 class="shades">Available in 7 shades</h1>
+
+        <input type="submit" Value="+ ADD" class="add" onclick="passvalues();">
+
+        <button class="similar" onclick="location.href='{{ url_for('lip_products') }}'">VIEW SIMILAR</button>
+
+        <img src="{{url_for('static',filename='images/color1.png')}}" class="color1">
+
+        <img src="{{url_for('static',filename='images/color2.png')}}" class="color2">
+
+        <img src="{{url_for('static',filename='images/color3.png')}}" class="color3">
+
+        <img src="{{url_for('static',filename='images/color4.png')}}" class="color4">
+
+        <img src="{{url_for('static',filename='images/color5.png')}}" class="color5">
+
+        <img src="{{url_for('static',filename='images/color6.png')}}" class="color6">
+
+        <img src="{{url_for('static',filename='images/color7.png')}}" class="color7">
+
+
+        <div class="line"></div>
+        <div class="description">Product Description</div>
+        <div class="productdescription">Soft Matte cream lipstick combines unrivaled pigmentation with superior comfort
+            and
+            is crafted to deliver smooth, full-coverage payoff in just one swipe. Saturate lips with rich, vivid
+            pigments
+            and a velvety-matte finish.</div>
+        <div class="line1"></div>
+        <div class="Frequentlyboughttogether">Frequently bought together</div>
+        <div class="photo1">
+            <img src="{{url_for('static',filename='images/pac1.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo2">
+            <img src="{{url_for('static',filename='images/pac2.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo3">
+            <img src="{{url_for('static',filename='images/pac3.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo4">
+            <img src="{{url_for('static',filename='images/pac4.jpg')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo5">
+            <img src="{{url_for('static',filename='images/pac5.PNG')}}" style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="line2"></div>
+
+        <div class="peoplealsotried">People also tried</div>
+
+        <div class="photo6">
+            <img src="{{url_for('static',filename='images/concealer.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo7">
+            <img src="{{url_for('static',filename='images/lipliner.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="photo8">
+            <img src="{{url_for('static',filename='images/lipprimer.PNG')}}"
+                style="position: absolute; width: 143px; height: 143px; border-radius: 24px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <!-- <div class="photo9">
+        <img src="images/face_2.png" style="position: absolute; width: 143px; height: 143px;">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="photo10">
+        <img src="images/face_3.png" style="position: absolute; width: 143px; height: 143px;">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div> -->
+        <div class="line3"></div>
+
+    </form>
+
+    <!-- <div class="box2" id="box2">
+        <img class="img2" id="img2" src="images/pac2.jpg">
+        <button class="cancel2btn" id="cancel2btn">
+            <img class="cancel2" id="cancel2" src="images/Path.png">
+        </button>
+        <div class="name2" id="name2"></div>
+        <div class="dec2" id="dec2"></div>
+        <div class="price2" id="price2"></div>
+    </div> -->
+
+</body>
+
+<!-- <script>
+    $("#box2").hide();
+
+    function pass1values() {
+        var pac2 = document.getElementById("box2").innerHTML;
+        localStorage.setItem("box2", pac2);
+        localStorage.setItem("pac2_name", "Soft Matte Cream Lipstick");
+        localStorage.setItem("pac2_desc", "Matte Finish Smooth Velvet Finish 1.8 gm");
+        localStorage.setItem("pac2_price", "₹635");
+    }
+</script> -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/checkout.css')}}">
+
+    <title>AR App</title>
+</head>
+
+<body>
+
+    <div class="App">
+        <div class="toolbar">
+            <a href="{{ url_for('tryout') }}">
+                <img src="{{url_for('static',filename='images/arrow_back_24px.png')}}"
+                    style="position: absolute; width: 44.67px; height: 44.67px; top:61.17px; left:59.17px">
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <h1 class="checkout_text">CHECKOUT (2)</h1>
+
+            <a href="{{ url_for('index') }}">
+                <div class="menu">
+                    <h1 class="end_session">END SESSION</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <h1 class="top">Instructions</h1>
+
+    <h1 class="desc">1. Tap the Print QR Code button to get a copy of your code. <br>2. Hand it at the check-out counter
+        to purchase your products. Scan code to get your images. <br> 3. Check Product List before printing</h1>
+
+    <img src="{{url_for('static',filename='images/qr_code.png')}}" class="qrcode">
+
+    <h1 class="price">TOTAL PRICE: ₹1085</h1>
+
+
+    <button class="menu2">
+        <h1 class="print_qrcode">PRINT QR CODE</h1>
+    </button>
+
+    <div class="togglebutton">
+        <div class="category">
+            <h1 class="category1">My Products (2)</h1>
+        </div>
+        <div class="company">My Looks (0)</div>
+    </div>
+
+    <div class="box1" id="box1">
+        <img class="img1" id="img1" src="{{url_for('static',filename='images/pac1.jpg')}}">
+        <img class="cancel1" id="cancel1" src="{{url_for('static',filename='images/Path.png')}}">
+
+        <div class="name1" id="name1">PAC Smudge Me Not Lipstick</div>
+        <div class="desc1" id="desc1">Matte Finish Smooth Velvet Finish 1.8 gm</div>
+
+        <!--<img class="star1" src="images/star_24px.png.png" >
+               <img class="star2" src="images/star_24px.png.png" >
+               <img class="star3" src="images/star_24px.png.png" >
+               <img class="star4" src="images/star_24px.png.png" >
+               <img class="star5" src="images/star_24px.png.png" > -->
+        <div class="price1" id="price1">₹ 450.00</div>
+    </div>
+
+    <div class="box2">
+        <img class="img2" src="{{url_for('static',filename='images/pac2.jpg')}}">
+        <img class="cancel2" src="{{url_for('static',filename='images/Path.png')}}">
+        <div class="name2">Soft Matte Cream Lipstick</div>
+        <div class="dec2">Matte Finish Smooth Velvet Finish 1.8 gm </div>
+        <!--   <img class="star6" src="images/star_24px.png.png">
+                    <img class="star7" src="images/star_24px.png.png">
+                    <img class="star8" src="images/star_24px.png.png">
+                    <img class="star9" src="images/star_24px.png.png" >
+                    <img class="star10" src="images/star_24px.png.png">-->
+        <div class="price2">₹ 635.00</div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

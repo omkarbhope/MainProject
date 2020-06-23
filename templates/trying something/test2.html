@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+ 
+<div class="box1" id="box1">
+    <img id="img1" class="img1">
+    <div id="cancel1" class="cancel1"></div>
+    <div class="name1" id="name1"></div>
+    <div class="desc1" id="desc1"></div>
+    <div class="price1" id="price1"></div>
+</div>
+
+</body>
+ 
+<script>
+  $(document).ready(function() {
+  var flickerAPI = "lipstick_data.json";
+  $.getJSON( flickerAPI, {
+    tags: "lipsticks",
+    tagmode: "any",
+    format: "json"
+  })
+  
+    .done(function( data ) {
+      $.each( data.lipstick1, function( i, lipstick1 ) {
+        $( '#img1' ).attr( "src", lipstick1.img_url ).appendTo( "#img1" );
+        // $( "<img>" ).attr( "src", lipsticks.img_url ).appendTo( "#cancel1" );
+        $('#name1').append(lipstick1.name1);
+        $('#desc1').append(lipstick1.desc1);
+        $('#price1').append(lipstick1.price1);
+      });
+    });
+})();
+</script>
+
+</html>
