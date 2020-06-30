@@ -38,6 +38,13 @@ class VideoCamera(object):
                 pts_array2 = np.array([l(48),l(49),l(50),l(51),l(52),l(53),l(54),l(64),l(63),l(62),l(61),l(60)],np.int32)
                 pts_array2 = pts_array2.reshape((-1,1,2))
                 cv2.fillPoly(fr,[pts_array2],(blue,green,red))
+                cv2.line(output, l(36), l(37), (0,0,0), 2)
+                cv2.line(output, l(37), l(38), (0,0,0), 2)
+                cv2.line(output, l(38), l(39), (0,0,0), 2)
+                cv2.line(output, l(42), l(43), (0,0,0), 2)
+                cv2.line(output, l(43), l(44), (0,0,0), 2)
+                cv2.line(output, l(44), l(45), (0,0,0), 2)
+
 
         # for (x, y, w, h) in faces:
         #     fc = gray_fr[y:y+h, x:x+w]
